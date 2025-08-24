@@ -719,7 +719,12 @@ ul, ol {
 
 /* Listas */
 ol li::marker {
-  font-weight: bold; 
+  font-size: 100%;
+  font-weight: 600;
+  color: rgb(0, 78, 148);
+  font-family: "Georgia", serif;
+  /* content: counter(list-item) ") ";  */
+   /* font-family: "Courier New", monospace; */
 }
 
 .lista {
