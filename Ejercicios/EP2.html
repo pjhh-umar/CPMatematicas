@@ -110,6 +110,43 @@
 
 
   <body class="fondo-body" ><h1 class="page-title-practica"> Ejercicios propuestos Primer Examen Parcial</h1>   
+
+
+    <div class="nota-box">
+  <h1 class="number-title-practica">Ejercicio</h1>
+  <p>Evalúe cada una de las siguientes expresiones.</p>
+  <ol class="two-column">
+    <li>$5^2$</li><br>
+    <li>$2^3$</li><br>
+    <li>$1^7$</li><br>
+    <li>$3^3$</li><br>
+    <li>$-5^2$</li><br>
+    <li>$7^3$</li><br>
+    <li>$(-3)^2$</li><br>
+    <li>$-6^3$</li><br>
+    <li>$(-1)^3$</li><br>
+    <li>$2^5$</li><br>
+    <li>$(-8)^2$</li><br>
+    <li>$5^3$</li><br>
+    <li>$(-6)^2$</li><br>
+    <li>$(-3)^3$</li><br>
+    <li>$4^1$</li><br>
+    <li>$-7^2$</li><br>
+    <li>$(-4)^4$</li><br>
+    <li>$-1^4$</li><br>
+    <li>$-2^4$</li><br>
+    <li>$3^2 (4)^2$</li><br>
+    <li>$\left(\tfrac{3}{4}\right)^2$</li><br>
+    <li>$\left(\tfrac{5}{8}\right)^3$</li><br>
+    <li>$\left(-\tfrac{1}{2}\right)^5$</li><br>
+    <li>$\left(-\tfrac{2}{3}\right)^4$</li><br>
+    <li>$5^2 \cdot 3^2$</li><br>
+    <li>$(-1)^4 (2)^4$</li><br>
+    <li>$4^3 \cdot 3^2$</li><br>
+    <li>$(-2)^3(-1)^9$</li><br>
+  </ol>
+</div>
+
     
 <!--   
     <div class="nota-box"><h1 class="number-title-practica">Práctica</h1>
@@ -124,7 +161,7 @@
     </div>
    -->
   
-<div class="nota-box">
+<!-- <div class="nota-box">
   <h1 class="number-title-practica">Ejercicio</h1>
   <p>En los siguientes problemas escriba los conjuntos dados por extensión, cuando sea posible.</p>
   <ol>
@@ -156,9 +193,9 @@
       $I := \{x \mid x \text{ es una palabra que contiene todas las vocales} \}$
     </li>
   </ol>
-</div>
+</div> -->
 
-      
+<!--       
 <div class="nota-box">
   <h1 class="number-title-practica">Ejercicio</h1>
   <p>
@@ -172,14 +209,14 @@
     <li>$E := \{10,20,30,40,50 \ldots\}$</li><br>
     <li>$F := \{1, 4, 9, 16, 25, 36, \ldots\}$</li><br>
     <li>$G := \{\text{lunes, martes, miércoles, jueves, viernes}\}$</li><br>
-    <!-- <li>$H := \{\text{triángulo, cuadrado, pentágono, hexágono, heptágono, \ldots}\}$</li><br>
-    <li>$I := \{\text{México, Canadá, Brasil, Argentina, Chile}\}$</li><br> -->
+    <li>$H := \{\text{triángulo, cuadrado, pentágono, hexágono, heptágono, \ldots}\}$</li><br>
+    <li>$I := \{\text{México, Canadá, Brasil, Argentina, Chile}\}$</li><br>
     <li>$J := \{5, 10, 15, 20, 25, \ldots\}$</li><br>
     <li>$K := \{-3, -2, -1, 1, 2, 3, \ldots\}$</li><br>
-    <!-- <li>$L := \{100, 99, 98, \ldots, 0\}$</li><br> -->
-    <!-- <li>$M := \{\text{perro, gato, tigre, león, jaguar}\}$</li><br> -->
+    <li>$L := \{100, 99, 98, \ldots, 0\}$</li><br>
+    <li>$M := \{\text{perro, gato, tigre, león, jaguar}\}$</li><br>
   </ol>
-</div>
+</div> -->
 
 
 
@@ -222,7 +259,7 @@
     </ol>
     </div> -->
 
-     <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
+     <!-- <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
     <p>Diga si las siguientes proposiciones son verdadeeras o falsas. Justifica tu respuesta explicando porque. </p>
     <ol class="two-column">
       <li>$5=\{5\}$</li><br>
@@ -242,7 +279,7 @@
     </ol>
 
     
-    </div>
+    </div> -->
 
     
      <!-- <div class="nota-box"><h1 class="number-title-practica"> Ejercicio</h1>
@@ -421,5 +458,27 @@ el conjunto potencia de $A$ es: $$\mathcal{P}(A) = \{\varnothing ,\{1\},\{2\},\{
  </p>
 </div> -->
 
-        
+    <!-- Donde aparecerá la fecha de la última modificación -->
+<footer>
+  <center>
+   <p id="ultima-actualizacion"></p>
+  </center>
+</footer>
+<script>
+// Obtenemos la fecha y hora de la última modificación del documento
+const fechaModificacion = new Date(document.lastModified);
+
+// Opciones para formatear la fecha (por ejemplo, DD/MM/AAAA)
+const opcionesFecha = { day: '2-digit', month: '2-digit', year: 'numeric' };
+const fechaFormateada = fechaModificacion.toLocaleDateString('es-ES', opcionesFecha);
+
+// Obtenemos la hora (HH:MM:SS)
+const horaFormateada = fechaModificacion.toLocaleTimeString('es-ES', {
+    hour: '2-digit', minute: '2-digit'
+});
+
+// Insertamos la fecha y la hora en el elemento con el ID "ultima-modificacion"
+document.getElementById("ultima-actualizacion").textContent = `Última actualización: ${fechaFormateada}`;
+</script>
+
 </body>
