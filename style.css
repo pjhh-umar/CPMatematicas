@@ -706,6 +706,7 @@ tbody tr:nth-child(odd) {
 }
 
 /* Columnas */
+.five-column { columns: 5; }
 .four-column { columns: 4; }
 .three-column { columns: 3; }
 .two-column { columns: 2; }
